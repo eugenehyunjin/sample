@@ -12,7 +12,9 @@
                 <li class="list-group-item" style="text-align: center">
                     <a class="nav-link py-3 px-0 px-lg-3 rounded" href="/posts/{{ $post->id }}">
                         {{$post -> title}}</a>
-                </li><br>
+                </li>
+                <li>{{$post -> user_name}}</li>
+                <br>
             @empty
                 <ul class="list-group" style="padding-top: 50px;">
                     <li class="list-group-item" style="text-align: center">
